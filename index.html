@@ -206,20 +206,6 @@
             z-index: 2;
         }
 
-        /* Arabic Terms Styling */
-        .arabic-term {
-            display: inline-block;
-            background: rgba(245,166,35,0.15);
-            padding: 2px 8px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-left: 5px;
-        }
-        body.rtl .arabic-term {
-            margin-left: 0;
-            margin-right: 5px;
-        }
-
         @media (max-width: 768px) {
             body.rtl .nav-menu li {
                 margin-right: 0;
@@ -239,7 +225,7 @@
     </style>
 </head>
 <body>
-    <!-- WhatsApp Float Button -->
+    <!-- WhatsApp Float Button - Corrected Number -->
     <a href="https://wa.me/9665300789833" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -250,7 +236,7 @@
             <div class="contact-info">
                 <div class="contact-numbers">
                     <span class="contact-item"><i class="fas fa-phone"></i> <span data-key="callNow">CALL NOW:</span> <a href="tel:+966554351755" class="phone-link">055 435 1755</a></span>
-                    <span class="contact-item"><i class="fab fa-whatsapp whatsapp-number"></i> <span data-key="whatsappNow">WHATSAPP:</span> <a href="https://wa.me/+966530078933" class="whatsapp-link">053 007 8933</a></span>
+                    <span class="contact-item"><i class="fab fa-whatsapp whatsapp-number"></i> <span data-key="whatsappNow">WHATSAPP:</span> <a href="https://wa.me/9665300789833" class="whatsapp-link">053 007 89833</a></span>
                 </div>
                 <span><i class="fas fa-envelope"></i> <a href="mailto:hazratjabbar0@gmail.com">hazratjabbar0@gmail.com</a></span>
             </div>
@@ -352,16 +338,14 @@
         </div>
     </section>
 
-    <!-- Services Section - All Arabic Gypsum Terms Included -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2><span data-key="servicesTitle">Our Gypsum</span> <span data-key="servicesSub">Services</span></h2>
                 <p data-key="servicesDesc">Complete gypsum solutions | جبس | جبس بورد | ديكور | تركيب | إصلاح</p>
             </div>
-            <div class="services-grid" id="servicesGrid">
-                <!-- Dynamic services injected via JS -->
-            </div>
+            <div class="services-grid" id="servicesGrid"></div>
         </div>
     </section>
 
@@ -381,7 +365,7 @@
         </div>
     </section>
 
-    <!-- Projects Gallery -->
+    <!-- Projects Gallery - Added More Pictures -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
@@ -577,7 +561,7 @@
                 <div class="footer-section"><h3>🏗️ HAZRAT JABBAR GYPSUM</h3><p data-key="footerDesc">Professional gypsum, gypsum board, decoration, wood, marble alternative, modern designs, Shasha, Shee Board, detailed work, painting, and cornices services. Quality workmanship with 15+ years of experience serving Riyadh and all KSA.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div></div>
                 <div class="footer-section"><h4 data-key="quickLinks">Quick Links</h4><ul><li><a href="#home" data-key="navHome">Home</a></li><li><a href="#about" data-key="navAbout">About</a></li><li><a href="#services" data-key="navServices">Services</a></li><li><a href="#projects" data-key="navProjects">Our Work</a></li><li><a href="#contact" data-key="navContact">Contact</a></li></ul></div>
                 <div class="footer-section"><h4 data-key="gypsumServicesFooter">Our Services | خدماتنا</h4><ul><li>جبس - Gypsum</li><li>جبس بورد - Gypsum Board</li><li>ديكور - Decoration</li><li>خشب - Wood Work</li><li>بديل رخام - Marble Alternative</li><li>معاصر - Modern Designs</li><li>شاشا - Shasha</li><li>شيبورد - Shee Board</li><li>تفصيلات - Detailed Work</li><li>بوية - Painting</li><li>كرانيش - Cornices</li></ul></div>
-                <div class="footer-section"><h4 data-key="contactPriority">Contact Priority</h4><p><i class="fas fa-phone"></i> Call/Text: 055 435 1755</p><p><i class="fab fa-whatsapp"></i> WhatsApp: 053 007 8933</p><p><i class="fas fa-clock"></i> <span data-key="responseTime">Response within 30 min</span></p><p><i class="fas fa-map-marker-alt"></i> Serving All Riyadh Areas</p></div>
+                <div class="footer-section"><h4 data-key="contactPriority">Contact Priority</h4><p><i class="fas fa-phone"></i> Call/Text: 055 435 1755</p><p><i class="fab fa-whatsapp"></i> WhatsApp: 053 007 89833</p><p><i class="fas fa-clock"></i> <span data-key="responseTime">Response within 30 min</span></p><p><i class="fas fa-map-marker-alt"></i> Serving All Riyadh Areas</p></div>
             </div>
             <div class="footer-bottom"><p>&copy; 2024 Hazrat Jabbar Gypsum Works. <span data-key="rights">All rights reserved.</span> | <span data-key="ksaServ">Professional Gypsum & Decoration Services in Riyadh, KSA | جبس وديكور في الرياض</span></p></div>
         </div>
@@ -609,14 +593,16 @@
             });
         });
 
-        // Projects Data
+        // Projects Data - Added more pictures (8 projects now)
         const projectsData = [
             { title: "Modern Gypsum Ceiling | أسقف جبس حديثة", category: "ceiling", image: "https://images.pexels.com/photos/2765289/pexels-photo-2765289.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Beautiful gypsum board false ceiling with LED lighting | أسقف جبس بورد مع إضاءة LED" },
             { title: "Decorative Gypsum & Cornices | ديكور جبس وكرانيش", category: "decorative", image: "https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Ornamental gypsum board with detailed moldings and cornices | جبس بورد مزخرف مع تفصيلات وكرانيش" },
             { title: "Gypsum Board Partition | قواطع جبس بورد", category: "partition", image: "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Gypsum board room partition with soundproofing | قواطع جبس بورد مع عزل صوتي" },
             { title: "Marble Alternative Walls | بديل رخام", category: "decorative", image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Elegant marble alternative wall finishing | تشطيبات بديل رخام أنيقة" },
             { title: "Wood & Gypsum Combination | خشب وجبس", category: "decorative", image: "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Decorative wood and gypsum combination walls | ديكورات خشب وجبس" },
-            { title: "Modern Shasha Design | شاشا معاصر", category: "ceiling", image: "https://images.pexels.com/photos/4107369/pexels-photo-4107369.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Modern Shasha ceiling design | تصاميم شاشا حديثة للأسقف" }
+            { title: "Modern Shasha Design | شاشا معاصر", category: "ceiling", image: "https://images.pexels.com/photos/4107369/pexels-photo-4107369.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Modern Shasha ceiling design | تصاميم شاشا حديثة للأسقف" },
+            { title: "Luxury Gypsum Ceiling | سقف جبس فاخر", category: "ceiling", image: "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Luxury gypsum ceiling with multiple layers | سقف جبس فاخر متعدد الطبقات" },
+            { title: "Gypsum Wall Panels | ألواح جبس حائطية", category: "decorative", image: "https://images.pexels.com/photos/2082086/pexels-photo-2082086.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop", description: "Decorative gypsum wall panels for modern interiors | ألواح جبس حائطية ديكورية" }
         ];
 
         const projectsGrid = document.getElementById('projects-grid');
@@ -652,28 +638,28 @@
             });
         }
 
-        // Translations with all Arabic terms
+        // Translations
         const translations = {
             en: {
                 callNow: "CALL NOW:", whatsappNow: "WHATSAPP:", tagline: "Gypsum | Gypsum Board | Decoration | Installation | Repair", navHome: "Home", navAbout: "About", navServices: "Gypsum Services", navProjects: "Our Work", navVideos: "Videos", navContact: "Contact",
                 heroTitle: "Expert Gypsum & Decoration Works", heroSub: "Gypsum | Gypsum Board | Decoration | Installation | Repair | 15+ Years", heroQuote: "Get Free Quote", heroWork: "See Our Work",
                 quick1: "Same Day Service", quick2: "Free Estimate", quick3: "Clean Work", quick4: "5 Year Warranty",
                 aboutMeet: "Meet", aboutName: "Hazrat Jabbar", aboutExpert: "Your Gypsum & Decoration Expert", aboutTitle: "I'm Hazrat Jabbar - Gypsum & Decoration Specialist", 
-                aboutDesc1: "With over 15 years of experience in all types of gypsum work including Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative, Modern Designs, Shasha, Shee Board, Detailed Work (Tafseerat), Painting, and Cornices.",
+                aboutDesc1: "With over 15 years of experience in all types of gypsum work including Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative, Modern Designs, Shasha, Shee Board, Detailed Work, Painting, and Cornices.",
                 aboutDesc2: "I specialize in gypsum board partitions, decorative cornices, false ceilings, complete gypsum repairs, wood work, marble alternatives, modern designs, and all types of decorative finishing.",
                 stat1: "Projects Completed", stat2: "Satisfaction Guarantee", stat3: "Years Experience", ownerName: "Hazrat Jabbar - Master Gypsum Craftsman", cert: "Certified Gypsum & Decoration Installer #GJ12345", award: "Awarded Best Gypsum & Decoration Work 2023", 
-                special: "Specialized in: Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative, Modern, Shasha, Shee Board, Details/Tafseerat, Painting, Cornices",
-                servicesTitle: "Our Gypsum", servicesSub: "Services", servicesDesc: "Complete gypsum solutions | Gypsum | Gypsum Board | Decoration | Installation | Repair",
+                special: "Specialized in: Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative, Modern, Shasha, Shee Board, Details, Painting, Cornices",
+                servicesTitle: "Our Gypsum", servicesSub: "Services", servicesDesc: "Complete gypsum solutions",
                 whyTitle: "Why Choose", whySub: "Us", whyDesc: "What makes our gypsum & decoration work special",
                 feature1: "Dust-Free Work", feature1Desc: "We use dust containment systems. Your home stays clean.", feature2: "On-Time Completion", feature2Desc: "Projects finished exactly when promised.", feature3: "Perfect Finish", feature3Desc: "Smooth, flawless gypsum and decorative surfaces.", feature4: "Best Materials", feature4Desc: "High-quality gypsum boards, wood, marble alternatives, and more.",
-                projectsTitle: "Our Gypsum", projectsSub: "Projects", projectsDesc: "See examples of our Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative work",
+                projectsTitle: "Our Gypsum", projectsSub: "Projects", projectsDesc: "See examples of our work",
                 filterAll: "All", filterCeil: "False Ceilings", filterDec: "Decorative", filterPart: "Partitions",
-                videosTitle: "Gypsum Work", videosSub: "in Action", videosDesc: "Watch our Gypsum, Gypsum Board, Decoration, Installation, Repair projects",
-                processTitle: "How We", processSub: "Work", processDesc: "Simple 4-step process for your gypsum & decoration project",
-                step1: "Free Consultation", step1Desc: "We visit your site, understand your gypsum needs, and provide free estimate", step2: "Material Selection", step2Desc: "Choose from best quality gypsum boards, wood, marble alternatives, and decorative materials", step3: "Professional Installation", step3Desc: "Expert installation of Gypsum, Gypsum Board, Decoration with minimal disruption", step4: "Final Polish", step4Desc: "Perfect finishing, painting, and cleanup - 100% satisfaction guaranteed",
-                testiTitle: "What Our", testiSub: "Clients Say", testiDesc: "Happy customers share their experience", testi1: "Hazrat Jabbar did an amazing job on our gypsum ceiling and decorative work. The design is beautiful and the finish is perfect.", testi2: "Best gypsum and decoration work in Riyadh! The attention to detail in the cornices and detailed work is exceptional.", homeowner: "Homeowner",
-                faqTitle: "Frequently Asked", faqSub: "Questions", faqDesc: "Common questions about Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative",
-                contactTitle: "Contact", contactSub: "Us", contactDesc: "Get your free estimate for gypsum & decoration work today", contactDiscuss: "Let's Discuss Your Gypsum Project", contactText: "Call or WhatsApp for free consultation.", callText: "Call or Text", hours1: "Available 7 AM - 8 PM", whatsappQuick: "Quick response", serviceAreaTitle: "Service Area", allAreas: "✅ We serve ALL areas in Riyadh region. Call for free estimate!", hoursTitle: "Working Hours", monSat: "Mon-Sat:", sun: "Sunday:", emergencyOnly: "Emergency only", formTitle: "Request Free Estimate", quoteBtn: "Get Free Quote", whatsappPref: "I prefer WhatsApp contact", quickLinks: "Quick Links", gypsumServicesFooter: "Our Services", footServ1: "Gypsum - جبس", footServ2: "Gypsum Board - جبس بورد", footServ3: "Decoration - ديكور", footServ4: "Wood - خشب", footServ5: "Marble Alternative - بديل رخام", contactPriority: "Contact Priority", responseTime: "Response within 30 min", rights: "All rights reserved.", ksaServ: "Professional Gypsum & Decoration Services in Riyadh, KSA", riyadhCity: "Riyadh City (Main Districts)", nearbyAreas: "Nearby Cities & Areas"
+                videosTitle: "Gypsum Work", videosSub: "in Action", videosDesc: "Watch our projects",
+                processTitle: "How We", processSub: "Work", processDesc: "Simple 4-step process",
+                step1: "Free Consultation", step1Desc: "We visit your site and provide free estimate", step2: "Material Selection", step2Desc: "Choose best quality materials", step3: "Professional Installation", step3Desc: "Expert installation with minimal disruption", step4: "Final Polish", step4Desc: "Perfect finishing and cleanup - 100% satisfaction",
+                testiTitle: "What Our", testiSub: "Clients Say", testiDesc: "Happy customers share", testi1: "Hazrat Jabbar did an amazing job on our gypsum ceiling. Very professional!", testi2: "Best gypsum and decoration work in Riyadh! Highly recommended!", homeowner: "Homeowner",
+                faqTitle: "Frequently Asked", faqSub: "Questions", faqDesc: "Common questions",
+                contactTitle: "Contact", contactSub: "Us", contactDesc: "Get your free estimate today", contactDiscuss: "Let's Discuss Your Gypsum Project", contactText: "Call or WhatsApp for free consultation.", callText: "Call or Text", hours1: "Available 7 AM - 8 PM", whatsappQuick: "Quick response", serviceAreaTitle: "Service Area", allAreas: "✅ We serve ALL areas in Riyadh region. Call for free estimate!", hoursTitle: "Working Hours", monSat: "Mon-Sat:", sun: "Sunday:", emergencyOnly: "Emergency only", formTitle: "Request Free Estimate", quoteBtn: "Get Free Quote", whatsappPref: "I prefer WhatsApp contact", quickLinks: "Quick Links", gypsumServicesFooter: "Our Services", footServ1: "Gypsum", footServ2: "Gypsum Board", footServ3: "Decoration", footServ4: "Wood", footServ5: "Marble Alternative", contactPriority: "Contact Priority", responseTime: "Response within 30 min", rights: "All rights reserved.", ksaServ: "Professional Gypsum & Decoration Services in Riyadh, KSA", riyadhCity: "Riyadh City", nearbyAreas: "Nearby Cities"
             },
             ar: {
                 callNow: "اتصل الآن:", whatsappNow: "واتساب:", tagline: "جبس | جبس بورد | ديكور | تركيب | إصلاح", navHome: "الرئيسية", navAbout: "من نحن", navServices: "خدمات الجبس", navProjects: "أعمالنا", navVideos: "فيديوهات", navContact: "اتصل بنا",
@@ -684,17 +670,17 @@
                 aboutDesc2: "أتخصص في قواطع الجبس بورد، الكرانيش الزخرفية، الأسقف المعلقة، إصلاحات الجبس الكاملة، أعمال الخشب، بديل الرخام، التصاميم العصرية، وجميع أنواع التشطيبات الديكورية.",
                 stat1: "مشروع مكتمل", stat2: "ضمان الرضا", stat3: "سنوات خبرة", ownerName: "حضرت جبار - حرفي جبس محترف", cert: "معتمد في تركيب الجبس والديكور #GJ12345", award: "حائز على جائزة أفضل أعمال جبس وديكور 2023",
                 special: "متخصص في: جبس، جبس بورد، ديكور، خشب، بديل رخام، معاصر، شاشا، شيبورد، تفصيلات، بويه، كرانيش",
-                servicesTitle: "خدمات", servicesSub: "الجبس", servicesDesc: "حلول الجبس الكاملة | جبس | جبس بورد | ديكور | تركيب | إصلاح",
+                servicesTitle: "خدمات", servicesSub: "الجبس", servicesDesc: "حلول الجبس الكاملة",
                 whyTitle: "لماذا", whySub: "تختارنا؟", whyDesc: "ما الذي يجعل أعمال الجبس والديكور لدينا مميزة",
                 feature1: "عمل خالٍ من الغبار", feature1Desc: "نستخدم أنظمة احتواء الغبار. منزلك يبقى نظيفاً.", feature2: "الانتهاء في الوقت المحدد", feature2Desc: "نحترم وقتك. يتم إنجاز المشاريع كما وعدنا.", feature3: "تشطيب مثالي", feature3Desc: "أسطح جبس وديكور ناعمة وخالية من العيوب.", feature4: "أفضل المواد", feature4Desc: "ألواح جبس بورد، خشب، بديل رخام عالية الجودة والمزيد.",
-                projectsTitle: "مشاريع", projectsSub: "الجبس", projectsDesc: "شاهد أمثلة من أعمالنا في الجبس، الجبس بورد، الديكور، الخشب، بديل الرخام",
+                projectsTitle: "مشاريع", projectsSub: "الجبس", projectsDesc: "شاهد أمثلة من أعمالنا",
                 filterAll: "الكل", filterCeil: "الأسقف المعلقة", filterDec: "الديكور", filterPart: "القواطع",
-                videosTitle: "أعمال", videosSub: "الجبس", videosDesc: "شاهد مشاريع الجبس، الجبس بورد، الديكور، التركيب، الإصلاح",
-                processTitle: "كيف", processSub: "نعمل", processDesc: "عملية بسيطة من 4 خطوات لمشروع الجبس والديكور الخاص بك",
-                step1: "استشارة مجانية", step1Desc: "نزور موقعك ونقدم تقديراً مجانياً", step2: "اختيار المواد", step2Desc: "اختر من أفضل ألواح الجبس بورد، الخشب، بديل الرخام والمواد الديكورية", step3: "تركيب احترافي", step3Desc: "تركيب احترافي للجبس، الجبس بورد، الديكور بأقل إزعاج", step4: "اللمسة النهائية", step4Desc: "تشطيب مثالي، بويه، وتنظيف كامل - رضا 100٪ مضمون",
-                testiTitle: "آراء", testiSub: "عملائنا", testiDesc: "عملاء سعداء يشاركون تجربتهم", testi1: "قام حضرت جبار بعمل رائع في سقف الجبس والديكور. التصميم جميل والتشطيب مثالي.", testi2: "أفضل أعمال جبس وديكور في الرياض! الاهتمام بالتفاصيل في الكرانيش والتفصيلات استثنائي.", homeowner: "صاحب منزل",
-                faqTitle: "الأسئلة", faqSub: "الشائعة", faqDesc: "أسئلة شائعة حول الجبس، الجبس بورد، الديكور، الخشب، بديل الرخام",
-                contactTitle: "اتصل", contactSub: "بنا", contactDesc: "احصل على تقدير مجاني لأعمال الجبس والديكور اليوم", contactDiscuss: "لنناقش مشروع الجبس الخاص بك", contactText: "اتصل أو راسل عبر الواتساب للحصول على استشارة مجانية.", callText: "اتصل أو راسل", hours1: "متاح من 7 صباحاً حتى 8 مساءً", whatsappQuick: "رد سريع عبر الواتساب", serviceAreaTitle: "منطقة الخدمة", allAreas: "✅ نخدم جميع مناطق الرياض. اتصل للحصول على تقدير مجاني!", hoursTitle: "ساعات العمل", monSat: "الاثنين-السبت:", sun: "الأحد:", emergencyOnly: "إصلاحات الطوارئ فقط", formTitle: "طلب تقدير مجاني", quoteBtn: "احصل على عرض مجاني", whatsappPref: "أفضل التواصل عبر الواتساب", quickLinks: "روابط سريعة", gypsumServicesFooter: "خدماتنا", footServ1: "جبس", footServ2: "جبس بورد", footServ3: "ديكور", footServ4: "خشب", footServ5: "بديل رخام", contactPriority: "أولوية الاتصال", responseTime: "الرد خلال 30 دقيقة", rights: "جميع الحقوق محفوظة.", ksaServ: "خدمات الجبس والديكور الاحترافية في الرياض، المملكة", riyadhCity: "مدينة الرياض (الأحياء الرئيسية)", nearbyAreas: "المدن والمناطق المجاورة"
+                videosTitle: "أعمال", videosSub: "الجبس", videosDesc: "شاهد مشاريع الجبس",
+                processTitle: "كيف", processSub: "نعمل", processDesc: "عملية بسيطة من 4 خطوات",
+                step1: "استشارة مجانية", step1Desc: "نزور موقعك ونقدم تقديراً مجانياً", step2: "اختيار المواد", step2Desc: "اختر من أفضل المواد", step3: "تركيب احترافي", step3Desc: "تركيب احترافي بأقل إزعاج", step4: "اللمسة النهائية", step4Desc: "تشطيب مثالي وتنظيف كامل - رضا 100٪",
+                testiTitle: "آراء", testiSub: "عملائنا", testiDesc: "عملاء سعداء يشاركون تجربتهم", testi1: "قام حضرت جبار بعمل رائع في سقف الجبس. عمل احترافي جداً!", testi2: "أفضل أعمال جبس وديكور في الرياض! موصى به بشدة!", homeowner: "صاحب منزل",
+                faqTitle: "الأسئلة", faqSub: "الشائعة", faqDesc: "أسئلة شائعة",
+                contactTitle: "اتصل", contactSub: "بنا", contactDesc: "احصل على تقدير مجاني اليوم", contactDiscuss: "لنناقش مشروع الجبس الخاص بك", contactText: "اتصل أو راسل عبر الواتساب للحصول على استشارة مجانية.", callText: "اتصل أو راسل", hours1: "متاح من 7 صباحاً حتى 8 مساءً", whatsappQuick: "رد سريع عبر الواتساب", serviceAreaTitle: "منطقة الخدمة", allAreas: "✅ نخدم جميع مناطق الرياض. اتصل للحصول على تقدير مجاني!", hoursTitle: "ساعات العمل", monSat: "الاثنين-السبت:", sun: "الأحد:", emergencyOnly: "إصلاحات الطوارئ فقط", formTitle: "طلب تقدير مجاني", quoteBtn: "احصل على عرض مجاني", whatsappPref: "أفضل التواصل عبر الواتساب", quickLinks: "روابط سريعة", gypsumServicesFooter: "خدماتنا", footServ1: "جبس", footServ2: "جبس بورد", footServ3: "ديكور", footServ4: "خشب", footServ5: "بديل رخام", contactPriority: "أولوية الاتصال", responseTime: "الرد خلال 30 دقيقة", rights: "جميع الحقوق محفوظة.", ksaServ: "خدمات الجبس والديكور الاحترافية في الرياض، المملكة", riyadhCity: "مدينة الرياض", nearbyAreas: "المدن المجاورة"
             }
         };
         
@@ -719,9 +705,9 @@
         
         function renderServices(lang) {
             const services = [
-                { icon: "fas fa-border-all", titleEn: "Gypsum & Gypsum Board | جبس وجبس بورد", titleAr: "الجبس والجبس بورد", descEn: "Beautiful false ceilings, POP designs, modern gypsum board ceilings with cornices (كرانيش).", descAr: "أسقف مستعارة جميلة، تصاميم جبس بورد حديثة مع كرانيش.", featuresEn: ["✓ Modern gypsum designs", "✓ LED lighting integration", "✓ Crack-resistant finish", "✓ Custom cornices (كرانيش)"], featuresAr: ["✓ تصاميم جبس عصرية", "✓ دمج إضاءة LED", "✓ تشطيب مقاوم للشقوق", "✓ كرانيش مخصصة"] },
-                { icon: "fas fa-puzzle-piece", titleEn: "Decoration & Details | ديكور وتفصيلات", titleAr: "الديكور والتفصيلات", descEn: "Custom cornices, moldings, arches, Shasha, Shee Board, and decorative wall elements.", descAr: "أفاريز مخصصة، زخارف، أقواس، شاشا، شيبورد، وعناصر جدارية ديكورية.", featuresEn: ["✓ Crown moldings (كرانيش)", "✓ Wall niches", "✓ Shasha designs", "✓ Shee Board work", "✓ Detailed finishing (تفصيلات)"], featuresAr: ["✓ كرانيش", "✓ محاريب جدارية", "✓ تصاميم شاشا", "✓ أعمال شيبورد", "✓ تشطيبات تفصيلية"] },
-                { icon: "fas fa-layer-group", titleEn: "Wood & Marble Alternative | خشب وبديل رخام", titleAr: "الخشب وبديل الرخام", descEn: "Professional wood work, marble alternative finishing, and modern contemporary designs (معاصر).", descAr: "أعمال خشب احترافية، تشطيبات بديل رخام، وتصاميم عصرية.", featuresEn: ["✓ Wood paneling", "✓ Marble alternative walls", "✓ Modern designs (معاصر)", "✓ Paint finishing (بويه)"], featuresAr: ["✓ ألواح خشبية", "✓ جدران بديل رخام", ✓"تصاميم معاصرة", "✓ تشطيبات بويه"] },
+                { icon: "fas fa-border-all", titleEn: "Gypsum & Gypsum Board | جبس وجبس بورد", titleAr: "الجبس والجبس بورد", descEn: "Beautiful false ceilings, POP designs, modern gypsum board ceilings with cornices.", descAr: "أسقف مستعارة جميلة، تصاميم جبس بورد حديثة مع كرانيش.", featuresEn: ["✓ Modern gypsum designs", "✓ LED lighting integration", "✓ Crack-resistant finish", "✓ Custom cornices"], featuresAr: ["✓ تصاميم جبس عصرية", "✓ دمج إضاءة LED", "✓ تشطيب مقاوم للشقوق", "✓ كرانيش مخصصة"] },
+                { icon: "fas fa-puzzle-piece", titleEn: "Decoration & Details | ديكور وتفصيلات", titleAr: "الديكور والتفصيلات", descEn: "Custom cornices, moldings, arches, Shasha, Shee Board, and decorative wall elements.", descAr: "أفاريز مخصصة، زخارف، أقواس، شاشا، شيبورد، وعناصر جدارية ديكورية.", featuresEn: ["✓ Crown moldings", "✓ Wall niches", "✓ Shasha designs", "✓ Shee Board work", "✓ Detailed finishing"], featuresAr: ["✓ كرانيش", "✓ محاريب جدارية", "✓ تصاميم شاشا", "✓ أعمال شيبورد", "✓ تشطيبات تفصيلية"] },
+                { icon: "fas fa-layer-group", titleEn: "Wood & Marble Alternative | خشب وبديل رخام", titleAr: "الخشب وبديل الرخام", descEn: "Professional wood work, marble alternative finishing, and modern contemporary designs.", descAr: "أعمال خشب احترافية، تشطيبات بديل رخام، وتصاميم عصرية.", featuresEn: ["✓ Wood paneling", "✓ Marble alternative walls", "✓ Modern designs", "✓ Paint finishing"], featuresAr: ["✓ ألواح خشبية", "✓ جدران بديل رخام", "✓ تصاميم معاصرة", "✓ تشطيبات بويه"] },
                 { icon: "fas fa-wrench", titleEn: "Installation & Repair | تركيب وإصلاح", titleAr: "التركيب والإصلاح", descEn: "Expert installation and repair for all types of gypsum, gypsum board, and decoration work.", descAr: "تركيب وإصلاح احترافي لجميع أنواع أعمال الجبس والجبس بورد والديكور.", featuresEn: ["✓ New installation", "✓ Crack repair", "✓ Water damage restoration", "✓ Complete renovation"], featuresAr: ["✓ تركيب جديد", "✓ إصلاح الشقوق", "✓ ترميم أضرار المياه", "✓ تجديد كامل"] }
             ];
             const grid = document.getElementById('servicesGrid');
@@ -730,10 +716,10 @@
         
         function renderFaq(lang){
             const faqs = [
-                { qEn: "What types of gypsum work do you offer?", qAr: "ما أنواع أعمال الجبس التي تقدمها؟", aEn: "We offer complete gypsum solutions including: Gypsum (جبس), Gypsum Board (جبس بورد), Decoration (ديكور), Wood (خشب), Marble Alternative (بديل رخام), Modern Designs (معاصر), Shasha (شاشا), Shee Board (شيبورد), Detailed Work (تفصيلات), Painting (بويه), and Cornices (كرانيش).", aAr: "نقدم حلول الجبس الكاملة بما في ذلك: جبس، جبس بورد، ديكور، خشب، بديل رخام، معاصر، شاشا، شيبورد، تفصيلات، بويه، وكرانيش." },
-                { qEn: "How long does gypsum ceiling installation take?", qAr: "كم يستغرق تركيب السقف الجبسي؟", aEn: "A typical bedroom ceiling takes 2-3 days including drying time. Smaller repairs can be done in a few hours.", aAr: "يستغرق سقف غرفة النوم النموذجي من 2-3 أيام بما في ذلك وقت التجفيف. يمكن إجراء الإصلاحات الصغيرة في غضون ساعات قليلة." },
-                { qEn: "Do you provide warranty on your work?", qAr: "هل تقدمون ضماناً على أعمالكم؟", aEn: "Yes! We offer 5-year warranty on all our gypsum, decoration, and installation work against cracks and defects.", aAr: "نعم! نقدم ضماناً لمدة 5 سنوات على جميع أعمال الجبس والديكور والتركيب ضد الشقوق والعيوب." },
-                { qEn: "Can you match existing decorative patterns?", qAr: "هل يمكنكم مطابقة الأنماط الديكورية الموجودة؟", aEn: "Absolutely. We specialize in matching existing textures, cornices, and decorative patterns for seamless repairs.", aAr: "بالتأكيد. نحن متخصصون في مطابقة القوام والكرانيش والأنماط الديكورية الموجودة لإصلاحات سلسة." }
+                { qEn: "What types of gypsum work do you offer?", qAr: "ما أنواع أعمال الجبس التي تقدمها؟", aEn: "We offer complete gypsum solutions including: Gypsum, Gypsum Board, Decoration, Wood, Marble Alternative, Modern Designs, Shasha, Shee Board, Detailed Work, Painting, and Cornices.", aAr: "نقدم حلول الجبس الكاملة بما في ذلك: جبس، جبس بورد، ديكور، خشب، بديل رخام، معاصر، شاشا، شيبورد، تفصيلات، بويه، وكرانيش." },
+                { qEn: "How long does gypsum ceiling installation take?", qAr: "كم يستغرق تركيب السقف الجبسي؟", aEn: "A typical bedroom ceiling takes 2-3 days including drying time.", aAr: "يستغرق سقف غرفة النوم النموذجي من 2-3 أيام بما في ذلك وقت التجفيف." },
+                { qEn: "Do you provide warranty on your work?", qAr: "هل تقدمون ضماناً على أعمالكم؟", aEn: "Yes! We offer 5-year warranty on all our gypsum, decoration, and installation work.", aAr: "نعم! نقدم ضماناً لمدة 5 سنوات على جميع أعمال الجبس والديكور والتركيب." },
+                { qEn: "Can you match existing decorative patterns?", qAr: "هل يمكنكم مطابقة الأنماط الديكورية الموجودة؟", aEn: "Absolutely. We specialize in matching existing textures, cornices, and decorative patterns.", aAr: "بالتأكيد. نحن متخصصون في مطابقة القوام والكرانيش والأنماط الديكورية الموجودة." }
             ];
             const faqContainer = document.getElementById('faqGrid');
             if(faqContainer){
@@ -746,14 +732,14 @@
             const select = document.getElementById('serviceSelect');
             if(select){
                 const options = [
-                    {en:"Gypsum Ceiling - New | جبس - أسقف جديدة", ar:"جبس - أسقف جديدة"},
-                    {en:"Gypsum Board Installation | تركيب جبس بورد", ar:"تركيب جبس بورد"},
-                    {en:"Decorative Gypsum & Cornices | ديكور جبس وكرانيش", ar:"ديكور جبس وكرانيش"},
-                    {en:"Wood & Marble Alternative | خشب وبديل رخام", ar:"خشب وبديل رخام"},
-                    {en:"Shasha / Shee Board Work | أعمال شاشا / شيبورد", ar:"أعمال شاشا / شيبورد"},
-                    {en:"Painting & Finishing | بويه وتشطيبات", ar:"بويه وتشطيبات"},
-                    {en:"Emergency Repair | إصلاح طارئ", ar:"إصلاح طارئ"},
-                    {en:"Other | أخرى", ar:"أخرى"}
+                    {en:"Gypsum Ceiling - New", ar:"جبس - أسقف جديدة"},
+                    {en:"Gypsum Board Installation", ar:"تركيب جبس بورد"},
+                    {en:"Decorative Gypsum & Cornices", ar:"ديكور جبس وكرانيش"},
+                    {en:"Wood & Marble Alternative", ar:"خشب وبديل رخام"},
+                    {en:"Shasha / Shee Board Work", ar:"أعمال شاشا / شيبورد"},
+                    {en:"Painting & Finishing", ar:"بويه وتشطيبات"},
+                    {en:"Emergency Repair", ar:"إصلاح طارئ"},
+                    {en:"Other", ar:"أخرى"}
                 ];
                 select.innerHTML = `<option value="">${lang === 'en' ? "Select Service Needed" : "اختر الخدمة المطلوبة"}</option>` + options.map(opt => `<option>${lang === 'en' ? opt.en : opt.ar}</option>`).join('');
             }
