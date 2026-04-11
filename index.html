@@ -73,6 +73,16 @@
             transform: rotate(180deg);
         }
 
+        /* Force phone numbers to stay LTR in RTL mode */
+        body.rtl .contact-item a,
+        body.rtl .phone-link,
+        body.rtl .whatsapp-link,
+        body.rtl .info-item a {
+            direction: ltr;
+            display: inline-block;
+            unicode-bidi: embed;
+        }
+
         .lang-switch {
             background: var(--secondary);
             color: var(--white);
@@ -225,8 +235,8 @@
     </style>
 </head>
 <body>
-    <!-- WhatsApp Float Button - Corrected Number -->
-    <a href="https://wa.me/+966530078933" class="whatsapp-float" target="_blank">
+    <!-- WhatsApp Float Button - Updated Number -->
+    <a href="https://wa.me/966554351725" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -235,8 +245,8 @@
         <div class="container">
             <div class="contact-info">
                 <div class="contact-numbers">
-                    <span class="contact-item"><i class="fas fa-phone"></i> <span data-key="callNow">CALL NOW:</span> <a href="tel:+966554351755" class="phone-link">055 435 1755</a></span>
-                    <span class="contact-item"><i class="fab fa-whatsapp whatsapp-number"></i> <span data-key="whatsappNow">WHATSAPP:</span> <a href="https://wa.me/+966530078933" class="whatsapp-link">053 007 8933</a></span>
+                    <span class="contact-item"><i class="fas fa-phone"></i> <span data-key="callNow">CALL NOW:</span> <a href="tel:+966554351725" class="phone-link">055 435 1725</a></span>
+                    <span class="contact-item"><i class="fab fa-whatsapp whatsapp-number"></i> <span data-key="whatsappNow">WHATSAPP:</span> <a href="https://wa.me/966554351725" class="whatsapp-link">055 435 1725</a></span>
                 </div>
                 <span><i class="fas fa-envelope"></i> <a href="mailto:hazratjabbar0@gmail.com">hazratjabbar0@gmail.com</a></span>
             </div>
@@ -365,7 +375,7 @@
         </div>
     </section>
 
-    <!-- Projects Gallery - Added More Pictures -->
+    <!-- Projects Gallery -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
@@ -485,8 +495,8 @@
                 <div class="contact-info-box">
                     <h3 data-key="contactDiscuss">Let's Discuss Your Gypsum Project</h3>
                     <p data-key="contactText">Call, text, or WhatsApp for a free consultation and estimate.</p>
-                    <div class="info-item"><i class="fas fa-phone"></i><div><h4 data-key="callText">Call or Text</h4><p><a href="tel:+966554351755">055 435 1755</a></p><small data-key="hours1">Available 7 AM - 8 PM</small></div></div>
-                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><h4>WhatsApp (Primary)</h4><p><a href="https://wa.me/9665300789833">053 007 89833</a></p><small data-key="whatsappQuick">Quick response on WhatsApp</small></div></div>
+                    <div class="info-item"><i class="fas fa-phone"></i><div><h4 data-key="callText">Call or Text</h4><p><a href="tel:+966554351725">055 435 1725</a></p><small data-key="hours1">Available 7 AM - 8 PM</small></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><h4>WhatsApp (Primary)</h4><p><a href="https://wa.me/966554351725">055 435 1725</a></p><small data-key="whatsappQuick">Quick response on WhatsApp</small></div></div>
                     <div class="info-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p><a href="mailto:hazratjabbar0@gmail.com">hazratjabbar0@gmail.com</a></p></div></div>
                     <div class="info-item"><i class="fas fa-map-marker-alt"></i><div>
                         <h4 data-key="serviceAreaTitle">Service Area - Riyadh & Surroundings</h4>
@@ -561,7 +571,7 @@
                 <div class="footer-section"><h3>🏗️ HAZRAT JABBAR GYPSUM</h3><p data-key="footerDesc">Professional gypsum, gypsum board, decoration, wood, marble alternative, modern designs, Shasha, Shee Board, detailed work, painting, and cornices services. Quality workmanship with 15+ years of experience serving Riyadh and all KSA.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div></div>
                 <div class="footer-section"><h4 data-key="quickLinks">Quick Links</h4><ul><li><a href="#home" data-key="navHome">Home</a></li><li><a href="#about" data-key="navAbout">About</a></li><li><a href="#services" data-key="navServices">Services</a></li><li><a href="#projects" data-key="navProjects">Our Work</a></li><li><a href="#contact" data-key="navContact">Contact</a></li></ul></div>
                 <div class="footer-section"><h4 data-key="gypsumServicesFooter">Our Services | خدماتنا</h4><ul><li>جبس - Gypsum</li><li>جبس بورد - Gypsum Board</li><li>ديكور - Decoration</li><li>خشب - Wood Work</li><li>بديل رخام - Marble Alternative</li><li>معاصر - Modern Designs</li><li>شاشا - Shasha</li><li>شيبورد - Shee Board</li><li>تفصيلات - Detailed Work</li><li>بوية - Painting</li><li>كرانيش - Cornices</li></ul></div>
-                <div class="footer-section"><h4 data-key="contactPriority">Contact Priority</h4><p><i class="fas fa-phone"></i> Call/Text: 055 435 1755</p><p><i class="fab fa-whatsapp"></i> WhatsApp: 053 007 89833</p><p><i class="fas fa-clock"></i> <span data-key="responseTime">Response within 30 min</span></p><p><i class="fas fa-map-marker-alt"></i> Serving All Riyadh Areas</p></div>
+                <div class="footer-section"><h4 data-key="contactPriority">Contact Priority</h4><p><i class="fas fa-phone"></i> Call/Text: 055 435 1725</p><p><i class="fab fa-whatsapp"></i> WhatsApp: 055 435 1725</p><p><i class="fas fa-clock"></i> <span data-key="responseTime">Response within 30 min</span></p><p><i class="fas fa-map-marker-alt"></i> Serving All Riyadh Areas</p></div>
             </div>
             <div class="footer-bottom"><p>&copy; 2024 Hazrat Jabbar Gypsum Works. <span data-key="rights">All rights reserved.</span> | <span data-key="ksaServ">Professional Gypsum & Decoration Services in Riyadh, KSA | جبس وديكور في الرياض</span></p></div>
         </div>
